@@ -18,6 +18,7 @@ Pandas
 Faker (for generating synthetic data)
 
 **3. Key Skills Applied**
+
 Building dashboards with Streamlit
 
 Generating fake datasets using Faker
