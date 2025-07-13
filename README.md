@@ -1,94 +1,112 @@
 # 📊 Placement Eligibility Streamlit App
 
-This is a data-driven Streamlit application that evaluates student eligibility for placements based on various performance metrics like programming, soft skills, and placement readiness.
 
----
+1. Objective / Problem Statement
+Design and implement a Streamlit application where users can input eligibility criteria for placement. The application should query a dataset of student information and display details of eligible candidates dynamically.
 
-## 🔧 Tech Stack
+2. Technologies Used
+Python
 
-- 🐍 Python
-- 📦 Faker (for synthetic data)
-- 💾 SQLite (relational database)
-- 📊 Streamlit (dashboard UI)
-- 🐼 Pandas (data handling)
+Streamlit
 
----
+SQLite3
 
-## 📁 Project Structure
+Pandas
 
-```
-Placement-Eligibility-App/
-├── placement_app.py          # Streamlit app
-├── data_generator.py         # Generates fake student records
-├── create_tables.py          # Creates required DB tables
-├── requirements.txt          # Dependencies
-├── students.db               # SQLite database (excluded via .gitignore)
-└── README.md
-```
+Faker (for generating synthetic data)
 
----
+3. Key Skills Applied
+Building dashboards with Streamlit
 
-## 🛠️ Setup Instructions
+Generating fake datasets using Faker
 
-### ✅ 1. Clone the Repository
+SQL table creation and queries
 
-```bash
-git clone https://github.com/YOUR_USERNAME/placement-eligibility-app.git
-cd placement-eligibility-app
-```
+Object-Oriented Programming (OOP)
 
-### ✅ 2. Install Dependencies
+Data filtering and visual exploration using Pandas
 
-```bash
-pip install -r requirements.txt
-```
+Database integration with SQLite
 
-### ✅ 3. Create Tables and Generate Data
+4. Project Flow / Architecture
+Step 1: Data Generation
+Created 4 major tables:
 
-```bash
-python create_tables.py
-python data_generator.py
-```
+students – student profile data
 
-### ✅ 4. Run the App
+enrollments – courses and enrollment dates
 
-```bash
-streamlit run placement_app.py
-```
+scores – performance scores per subject
 
----
+attendance – last 30 days of attendance logs
 
-## 🔍 Features
+Used Faker to generate realistic fake data
 
-- Generate 500 synthetic student records using Faker
-- Store and manage data in a normalized SQLite database
-- Dynamic filtering based on custom eligibility criteria
-- View programming, soft skills, and placement performance
-- Easily extendable with SQL analytics
+Ensured all tables are connected via student_id (foreign keys)
 
----
+Step 2: Data Storage
+Stored data in SQLite relational database
 
-## 📊 Sample Eligibility Criteria
+Used Python OOP for code modularity and clarity
 
-- Programming Problems Solved > 50
-- Communication Skills > 75
-- Placement Status: Ready or Placed
+Step 3: Streamlit Dashboard
+Sidebar lets users select the table they want to view
 
----
+Displayed data dynamically using st.dataframe()
 
-## 📌 Future Improvements
+Querying handled using pandas.read_sql_query()
 
-- Add filters to Streamlit sidebar
-- Visualizations for soft skills distribution
-- Export eligible students as CSV
+5. Business Use Cases
+Placement Management: Shortlist students based on performance
 
----
+Student Performance Tracking: Visualize coding and soft skills readiness
 
-## 📄 License
+Interactive Analytics: Enable non-tech users to analyze data easily
 
-This project is for educational and demonstration purposes.
+🔎 7. Example SQL Queries (Insights Section)
+You can optionally include a few sample SQL queries such as:
 
----
+sql
+Copy
+Edit
+-- Top 5 students by overall programming score
+SELECT student_id, SUM(score) as total_score
+FROM scores
+GROUP BY student_id
+ORDER BY total_score DESC
+LIMIT 5;
+📁 8. Project Files
+SQL_Table_Creation.py: Creates SQLite tables
+
+SQL_Table_Generator.py: Generates fake student data
+
+Streamlit_Application.py: Dashboard code
+
+students.db: SQLite database with all 4 tables
+
+📊 9. Sample Outputs
+Add screenshots like:
+
+Dashboard UI
+
+Filtered results table
+
+Sample SQL query outputs (optional)
+
+📏 10. Evaluation Metrics
+Functionality & Filtering
+
+UI/UX of the dashboard
+
+Code modularity and OOP structure
+
+Insights quality via SQL
+
+Completeness of documentation
+
+✅ 11. Conclusion
+This project demonstrates how to combine Python, SQL, and Streamlit to create an interactive eligibility analysis tool. The modular design allows for extension into real placement dashboards or academic analytics.
+
 
 ## ✨ Author
 
