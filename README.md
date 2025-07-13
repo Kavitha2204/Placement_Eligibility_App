@@ -92,28 +92,9 @@ Streamlit_Application.py: Dashboard code
 
 students.db: SQLite database with all 4 tables
 
-8. Sample Outputs
 
-Add screenshots like:
 
-Dashboard UI
-
-Filtered results table
-
-Sample SQL query outputs (optional)
-
-9. Evaluation Metrics
-Functionality & Filtering
-
-UI/UX of the dashboard
-
-Code modularity and OOP structure
-
-Insights quality via SQL
-
-Completeness of documentation
-
-✅ 10. Conclusion
+✅  Conclusion
 This project demonstrates how to combine Python, SQL, and Streamlit to create an interactive eligibility analysis tool. The modular design allows for extension into real placement dashboards or academic analytics.
 
 
