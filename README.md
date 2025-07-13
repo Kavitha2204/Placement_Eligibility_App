@@ -31,6 +31,7 @@ Data filtering and visual exploration using Pandas
 Database integration with SQLite
 
 4. Project Flow / Architecture
+
 Step 1: Data Generation
 Created 4 major tables:
 
@@ -59,13 +60,15 @@ Displayed data dynamically using st.dataframe()
 Querying handled using pandas.read_sql_query()
 
 5. Business Use Cases
+   
 Placement Management: Shortlist students based on performance
 
 Student Performance Tracking: Visualize coding and soft skills readiness
 
 Interactive Analytics: Enable non-tech users to analyze data easily
 
-🔎 7. Example SQL Queries (Insights Section)
+6. Example SQL Queries (Insights Section)
+   
 You can optionally include a few sample SQL queries such as:
 
 sql
@@ -77,7 +80,9 @@ FROM scores
 GROUP BY student_id
 ORDER BY total_score DESC
 LIMIT 5;
-📁 8. Project Files
+
+7. Project Files
+
 SQL_Table_Creation.py: Creates SQLite tables
 
 SQL_Table_Generator.py: Generates fake student data
@@ -86,7 +91,8 @@ Streamlit_Application.py: Dashboard code
 
 students.db: SQLite database with all 4 tables
 
-📊 9. Sample Outputs
+8. Sample Outputs
+
 Add screenshots like:
 
 Dashboard UI
@@ -95,7 +101,7 @@ Filtered results table
 
 Sample SQL query outputs (optional)
 
-📏 10. Evaluation Metrics
+9. Evaluation Metrics
 Functionality & Filtering
 
 UI/UX of the dashboard
@@ -106,7 +112,7 @@ Insights quality via SQL
 
 Completeness of documentation
 
-✅ 11. Conclusion
+✅ 10. Conclusion
 This project demonstrates how to combine Python, SQL, and Streamlit to create an interactive eligibility analysis tool. The modular design allows for extension into real placement dashboards or academic analytics.
 
 
