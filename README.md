@@ -2,6 +2,7 @@
 
 
 **1. Objective / Problem Statement**
+
 Design and implement a Streamlit application where users can input eligibility criteria for placement. The application should query a dataset of student information and display details of eligible candidates dynamically.
 
 **2. Technologies Used**
