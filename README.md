@@ -1,10 +1,10 @@
 # 📊 Placement Eligibility Streamlit App
 
 
-##1. Objective / Problem Statement
+**1. Objective / Problem Statement**
 Design and implement a Streamlit application where users can input eligibility criteria for placement. The application should query a dataset of student information and display details of eligible candidates dynamically.
 
-##2. Technologies Used
+**2. Technologies Used**
 
 Python
 
@@ -16,7 +16,7 @@ Pandas
 
 Faker (for generating synthetic data)
 
-3. Key Skills Applied
+**3. Key Skills Applied**
 Building dashboards with Streamlit
 
 Generating fake datasets using Faker
